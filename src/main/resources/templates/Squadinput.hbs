@@ -1,0 +1,21 @@
+{{#partial "content"}}
+    <form action="/success">
+        <label for="squadName">Input Squad Name</label>
+        <input type="text" name="squadName" id="squadName" class="form-control"><br>
+        <label for="squadSize">Input Squad size</label>
+        <input type="number" name="squadSize" id="squadSize" class="form-control">
+        <label for="squadCause">Select Squad Cause</label>
+        <select name="squadCause" id="squadCause" class="form-control">
+            <option value=""></option>
+            <option value="Sexism"> Sexism </option>
+            <option value="Computer Iliteracy">Computer Iliteracy</option>
+            <option value="Public Misconduct">Public Misconduct</option>
+            <option value="Bus etiquette"> Bus etiquette</option>
+        </select>
+        <br><br><br>
+        <button type="submit" class="btn btn-success">Submit form</button>
+        <button type="reset" class="btn btn-danger">Clear inputs</button>
+        <br><br><br>
+    </form>
+{{/partial}}
+{{> layout.hbs}}

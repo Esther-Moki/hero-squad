@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Heroes & Heroines {{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body style="overflow-x: hidden;">
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="/heroInput">Add a New Hero</a></li>
+            <li role="presentation" class="active"><a href="/Squadinput">Add a New Squad</a></li>
+
+        </ul>
+
+<div class="container">
+    <!--begin main template-->
+
+
+    <div class="col-md-12">
+        {{#block "content"}}
+
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+
+    </body>
+    </html>
+{{/block}}
